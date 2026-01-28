@@ -1,5 +1,5 @@
-import { Meteor } from 'meteor/meteor'
-import { Link, LinksCollection } from '/imports/api/links'
+{ Meteor } from 'meteor/meteor'
+{ Link, LinksCollection } from '/imports/api/links'
 
 async function insertLink({ title, url }: Pick<Link, 'title' | 'url'>)
   await LinksCollection.insertAsync
@@ -7,7 +7,7 @@ async function insertLink({ title, url }: Pick<Link, 'title' | 'url'>)
     url: url
     createdAt: new Date()
 
-Meteor.startup async () =>
+Meteor.startup async =>
   // If the Links collection is empty, add some data.
   if await LinksCollection.find().countAsync() is 0
     await insertLink

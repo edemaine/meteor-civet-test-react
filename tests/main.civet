@@ -1,9 +1,9 @@
-import { Meteor } from 'meteor/meteor'
-import assert from 'assert'
+{ Meteor } from 'meteor/meteor'
+assert from 'assert'
 
 describe 'meteor-solid-test-react', ->
-  it 'package.json has correct name', async () =>
-    const { name } = await import '../package.json'
+  it 'package.json has correct name', async =>
+    { name } := await import '../package.json'
     assert.strictEqual name, 'meteor-solid-test-react'
 
   if Meteor.isClient
