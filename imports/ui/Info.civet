@@ -1,0 +1,18 @@
+import React from 'react'
+import { useFind, useSubscribe } from 'meteor/react-meteor-data'
+import { LinksCollection, Link } from '../api/links'
+
+export const Info = () =>
+  const isLoading = useSubscribe 'links'
+  const links = useFind () => LinksCollection.find()
+
+  const makeLink = (link: Link) =>
+    <li key={link._id}>
+      <a href={link.url} target="_blank">{link.title}
+
+  if isLoading()
+    <div>Loading...
+  else
+    <div>
+      <h2>Learn Meteor!
+      <ul>{links.map(makeLink)}
