@@ -1,5 +1,5 @@
-{ Meteor } from 'meteor/meteor'
-{ Link, LinksCollection } from '/imports/api/links'
+{ Meteor } from meteor/meteor
+{ Link, LinksCollection } from /imports/api/links
 
 async function insertLink({ title, url }: Pick<Link, 'title' | 'url'>)
   await LinksCollection.insertAsync

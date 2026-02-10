@@ -1,6 +1,6 @@
-React from 'react'
-{ Hello } from './Hello'
-{ Info } from './Info'
+React from react
+{ Hello } from ./Hello
+{ Info } from ./Info
 
 export App := =>
   <div>

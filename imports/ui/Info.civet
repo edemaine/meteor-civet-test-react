@@ -1,6 +1,6 @@
-React from 'react'
-{ useFind, useSubscribe } from 'meteor/react-meteor-data'
-{ LinksCollection, Link } from '../api/links'
+React from react
+{ useFind, useSubscribe } from meteor/react-meteor-data
+{ LinksCollection, Link } from ../api/links
 
 export Info := =>
   isLoading := useSubscribe 'links'

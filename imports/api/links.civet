@@ -1,4 +1,4 @@
-{ Mongo } from 'meteor/mongo'
+{ Mongo } from meteor/mongo
 
 export interface Link
   _id?: string

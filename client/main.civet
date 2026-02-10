@@ -1,7 +1,7 @@
-React from 'react'
-{ createRoot } from 'react-dom/client'
-{ Meteor } from 'meteor/meteor'
-{ App } from '/imports/ui/App'
+React from react
+{ createRoot } from react-dom/client
+{ Meteor } from meteor/meteor
+{ App } from /imports/ui/App
 
 Meteor.startup =>
   container := document.getElementById 'react-target'
